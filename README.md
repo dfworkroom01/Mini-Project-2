@@ -12,20 +12,22 @@ npm vite latest
 express
 node js
 cors
-The necessary mysql12 (if haven't)
+The necessary mysql2 (if haven't)
 
 To activate the app:
 Activate the DB in workbench MySQL
 Activate the backend (node server.js)
 Activate the frontend (npm run dev)
 
-To the server.js (backend) wih jest:
+To the server.js (backend) with jest:
 add the following code at the very end of server.js:
 export default app;
 
-To install jest and run teh test, you need jest and babel:
+To install jest and run the test, you need jest and babel:
 npm install --save-dev jest supertest
 npm install --save-dev @babel/core @babel/preset-env babel-jest
+Run the test: 
+npm test -- --detectOpenHandles
 
 In package.json backend, ensure you have the following right after >Debug:
   "scripts": {
