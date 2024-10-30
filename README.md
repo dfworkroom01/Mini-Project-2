@@ -19,8 +19,8 @@ Activate the DB in workbench MySQL
 Activate the backend (node server.js)
 Activate the frontend (npm run dev)
 
-To the server.js (backend) with jest:
-add the following code at the very end of server.js:
+To test the server.js (backend) with jest:
+Add the following code at the very end of server.js:
 export default app;
 
 To install jest and run the test, you need jest and babel:
